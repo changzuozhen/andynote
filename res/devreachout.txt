@@ -1,0 +1,33 @@
+http://txp-01.tencent.com/proxy_devnet.pac
+
+export http_proxy=http://dev-proxy.oa.com:8080
+export https_proxy=https://dev-proxy.oa.com:8080
+
+export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;
+
+git config --global http.proxy http://127.0.0.1:1087
+git config --global https.proxy https://127.0.0.1:1087
+
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+
+git config --global http.proxy http://dev-proxy.oa.com:8080
+git config --global https.proxy https://dev-proxy.oa.com:8080
+
+git config --global http.proxy http://proxy.oa.com:8080
+git config --global https.proxy https://proxy.oa.com:8080
+
+dev-proxy.oa.com
+8080
+
+
+
+gradle.properties
+
+systemProp.http.proxyHost=web-proxy.oa.com
+systemProp.http.proxyPort=8080
+systemProp.https.proxyHost=web-proxy.oa.com
+systemProp.https.proxyPort=8080

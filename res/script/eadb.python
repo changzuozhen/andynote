@@ -1,0 +1,38 @@
+#!/usr/local/bin/python
+import os
+import subprocess
+import sys
+
+__author__ = 'benny'
+
+def getdevices():
+    lines = os.popen('adb devices').readlines()
+    found = False
+    ret = []
+    for line in lines:
+        line = line.strip()
+        if found:
+            if line:
+                ret.append(line.split('\t')[0])
+        elif 'List of devices attached' == line:
+            found = True
+
+    return ret
+
+devices = getdevices()
+chosenDevice = devices[0]
+if len(devices) > 1:
+    for i in range(0, len(devices)):
+        print ("[%d] %s" % (i, devices[i]))
+
+    chosen = raw_input("Choose a device to execute the command: [default 0]: ")
+    if chosen:
+        index = int(chosen)
+        chosenDevice = devices[index]
+
+
+cmd = "adb"
+args = "-s %s " % chosenDevice
+cmds = ["adb", "-s", chosenDevice]
+cmds.extend(sys.argv[1:])
+subprocess.call(cmds)

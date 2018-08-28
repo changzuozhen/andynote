@@ -1,0 +1,28 @@
+#!/usr/local/bin/python
+# coding=utf-8
+import os
+import subprocess
+import sys
+import re
+
+if len(sys.argv) < 3:
+    print "usage: filterlog <filename> <pid>"
+else:
+    filename = sys.argv[1]
+    pid = sys.argv[2]
+
+    file = open(filename)
+    filteredfile = open(filename + "_filtered", 'w')
+    line = file.readline()
+    while line:
+        # 08-03 17:57:10.852 D/PowerManagerService(  849): newScreenState = 2
+        pat = r"\d{2}-\d{2}\s+\d{2}:\d{2}:\d{2}\.\d{3}:?\s+\w/\w+\(\s*(\d+)\):.*"
+        m = re.match(pat, line)
+        if m:
+            fpid = m.group(1)
+            if fpid == pid:
+                print line
+                # uline = unicode(line, "GBK").encode("utf-8")
+                filteredfile.write(line),
+
+        line = file.readline()

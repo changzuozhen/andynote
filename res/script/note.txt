@@ -1,0 +1,116 @@
+★
+
+sudo spctl --master-disable
+
+macOS Sierra 任何来源
+
+addr2line、objdump、ndk-stack
+
+Tombstone
+tombstone 文件位于路径 /data/tombstones/ 下，
+
+tombstone 文件它主要由下面几部分组成：
+
+Build fingerprint
+Crashed process and PIDs
+Terminated signal and fault address
+CPU registers
+Call stack
+Stack content of each call
+
+
+➜  ~  addr2lin --help
+Usage: /Users/AndyChang/Library/Android/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-addr2line [option(s)] [addr(s)]
+ Convert addresses into line number/file name pairs.
+ If no addresses are specified on the command line, they will be read from stdin
+ The options are:
+  @<file>                Read options from <file>
+  -a --addresses         Show addresses
+  -b --target=<bfdname>  Set the binary file format
+  -e --exe=<executable>  Set the input file name (default is a.out)
+  -i --inlines           Unwind inlined functions
+  -j --section=<name>    Read section-relative offsets instead of addresses
+  -p --pretty-print      Make the output easier to read for humans
+  -s --basenames         Strip directory names
+  -f --functions         Show function names
+  -C --demangle[=style]  Demangle function names
+  -h --help              Display this information
+  -v --version           Display the program's version
+
+/Users/AndyChang/Library/Android/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-addr2line: supported targets: elf32-littlearm elf32-bigarm elf32-little elf32-big plugin srec symbolsrec verilog tekhex binary ihex
+Report bugs to <http://source.android.com/source/report-bugs.html>
+
+
+
+➜  ~  ndk-stack --help
+Usage:
+   ndk-stack -sym <path> [-dump <path>]
+
+      -sym  Contains full path to the root directory for symbols.
+      -dump Contains full path to the file containing the crash dump.
+            This is an optional parameter. If ommited, ndk-stack will
+            read input data from stdin
+
+   See docs/NDK-STACK.html in your NDK installation tree for more details.
+
+
+   adb shell logcat | ndk-stack -sym /Volumes/Code/HelloJNICallback/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libhello-jnicallback.so
+
+ ndk-stack -sym /Volumes/Code/HelloJNICallback/app/build/intermediates/cmake/debug/obj/armeabi-v7a -dump ~/test.txt 
+ ndk-stack -sym $PROJECT_PATH/app/build/intermediates/cmake/debug/obj/armeabi-v7a -dump ~/test.txt 
+
+   adb shell logcat | ndk-stack -sym $PROJECT_PATH/OBJ/LOCAL/ARMEABI
+
+
+   addr2lin /Volumes/Code/HelloJNICallback/app/build/intermediates/cmake/debug/obj/armeabi/libhello-jnicallback.so 1cd7
+
+
+   ndk-stack -sym ~/Tencent/WorkDev/Trunk/wecarListen/wecarmusic/build/outputs/apk/lib/armeabi -dump  ~/Tencent/WorkDev/Trunk/wecarListen/tombstones/tombstone_06
+
+
+   ndk-stack -sym /Users/AndyChang/Tencent/WorkDev/Trunk/wecarListen/libcodec/build/outputs/aar/jni/armeabi/ -dump  ~/Tencent/WorkDev/Trunk/wecarListen/tombstones/tombstone_06
+
+
+   ndk-stack -sym /Users/AndyChang/Tencent/WorkDev/Trunk/wecarListen/wecarmusic/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main/lib/armeabi/ -dump  ~/Tencent/WorkDev/Trunk/wecarListen/tombstones/tombstone_06
+
+
+
+ adb shell screenrecord /storage/extsd/demo.mp4  --size 1024x600 --time-limit 5
+
+
+adb pull /storage/extsd/demo.mp4
+
+
+
+adb shell screenrecord /storage/emulated/0/demo.mp4  --size 1024x600 --time-limit 5
+
+
+adb pull /storage/emulated/0/demo.mp4
+
+
+adb shell screenrecord /sdcard/demo.mp4  --size 1024x600 --time-limit 5
+
+
+adb pull /sdcard/demo.mp4
+
+
+
+
+
+ffmpeg -t 10 -ss 00:00:00 -i demo.mp4 demo.gif
+
+
+
+测试 acc off on 续播必须拔掉 usb 调试
+如果要抓取日志可以采用 adb 进去执行 logcat 命令的方式吧日志写在车机上，然后抓完之后把那个 LOGCAT 进程杀掉。把日志拷出来
+
+
+logcat -v time > /sdcard/log1109.txt&
+
+抓完之后要
+ps | grep xxx进程号
+
+kill -9 xxx进程号 杀掉
+要不然后台一直写文件
+
+adb pull /sdcard/log1109.txt

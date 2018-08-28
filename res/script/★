@@ -1,0 +1,33 @@
+★
+❤︎
+proxy.tencent.com
+
+dev-proxy.oa.com
+
+export HTTPS_PROXY="http://dev-proxy.oa.com:8080/"
+export HTTPS_PROXY="http://web-proxyhk.oa.com:8080/"
+
+
+adb shell screenrecord /storage/extsd/demo.mp4  --size 1024x600 --time-limit 5
+
+
+adb pull /storage/extsd/demo.mp4
+
+
+ffmpeg -t 10 -ss 00:00:00 -i demo.mp4 demo.gif
+
+
+
+测试 acc off on 续播必须拔掉 usb 调试
+如果要抓取日志可以采用 adb 进去执行 logcat 命令的方式吧日志写在车机上，然后抓完之后把那个 LOGCAT 进程杀掉。把日志拷出来
+
+
+logcat -v time > /sdcard/log1109.txt&
+
+抓完之后要
+ps | grep xxx进程号
+
+kill -9 xxx进程号 杀掉
+要不然后台一直写文件
+
+adb pull /sdcard/log1109.txt

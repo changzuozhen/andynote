@@ -1,0 +1,1 @@
+http://txp-01.tencent.com/proxy.pac

@@ -1,0 +1,21 @@
+ctrl + a/e 回到命令行的开头和结尾
+Ctrl+f/b 光标前移/后退
+alt + b/f 向前/后一个单词
+
+
+ctrl + u/k 剪切光标前/后 所有单词
+ctrl + y 撤销上个操作
+Ctrl+y 粘贴
+
+ctrl + w 删除光标前一个单词
+alt + d 删除光标后一个单词
+Ctrl+u/k 删除到行首/行尾
+Ctrl+d 删除一个字符,删除一个字符，相当于通常的Delete键
+Ctrl+h 退格删除一个字符,相当于通常的Backspace键
+
+Ctrl+p shell中上一个命令,或者 文本中移动到上一行
+Ctrl+n shell中下一个命令,或者 文本中移动到下一行
+Ctrl+r 往后搜索历史命令
+Ctrl+s 往前搜索历史命令
+
+Ctrl+l 类似 clear 命令效果
