@@ -19,4 +19,3 @@ https://github.com/shadowsocks/ShadowsocksX-NG
 
 [Android Studio设置shadowsocks代理](https://blog.csdn.net/u013495603/article/details/50970067)
 https://github.com/getlantern/lantern
-
