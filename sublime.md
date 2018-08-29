@@ -26,22 +26,20 @@ https://github.com/happypeter
 
 
 Mac 常用符号如下：
-⌘（command）
-⌥（option）
-⇧（shift）
-⇪（caps lock）
-⌃（control）
-↩（return）
-⌅（enter）
-
- 
+* ⌘（command）
+* ⌥（option）
+* ⇧（shift）
+* ⇪（caps lock）
+* ⌃（control）
+* ↩（return）
+* ⌅（enter）
 
 sublime  多行编辑 快速过滤日志
-select some keyword
-⌘ + ⌃ + G
-⌘ + ←
-⌘ + ⇧ + →
-⌘ + C 
-⌘ + N （创建新文件）
-⌘ + V
+1. select some keyword
+2. ⌘ + ⌃ + G
+3. ⌘ + ←
+4. ⌘ + ⇧ + →
+5. ⌘ + C 
+6. ⌘ + N （创建新文件）
+7. ⌘ + V
 

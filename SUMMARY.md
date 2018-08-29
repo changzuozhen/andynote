@@ -17,8 +17,8 @@
 
 ## openGL
 * [OPENGL](opengl.md)
-* [OpenGLES2.0原理浅析](OpenGLES2.0原理浅析.md)
-* [openGL INFO](openGL INFO.md)
+    * [OpenGLES2.0原理浅析](OpenGLES2.0原理浅析.md)
+    * [openGL INFO](openGL INFO.md)
 
 ## snip
 * [codestyle](codestyle.md)
@@ -45,6 +45,7 @@
 * [git 2018-03-13](git 2018-03-13.md)
 * [iterm](iterm.md)
 * [youtube-dl](youtube-dl.md)
+* [gitbook](gitbook.md)
 
 ## research
 * [shell](shell.md)

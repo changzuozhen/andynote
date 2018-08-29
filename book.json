@@ -1,0 +1,95 @@
+{
+  "author": "changzuozhen",
+  "description": "Andy Note",
+  "gitbook": "3.2.3",
+  "language": "zh-hans",
+  "links": {
+    "sidebar": {
+      "我的博客": "https://andynote.gitbook.io/learn/"
+    }
+  },
+  "plugins": [
+    "-sharing",
+    "splitter",
+    "expandable-chapters-small",
+    "anchors",
+    "donate",
+    "github",
+    "github-buttons",
+    "sharing-plus",
+    "anchor-navigation-ex",
+    "favicon"
+  ],
+  "pluginsConfig": {
+    "anchor-navigation-ex": {
+      "showLevel": false
+    },
+    "donate": {
+      "alipay": "./media/alipay.jpg",
+      "alipayText": "alipay",
+      "button": "赞赏",
+      "title": "",
+      "wechat": "./media/wechat.jpg",
+      "wechatText": "wechat"
+    },
+    "favicon": {
+      "appleTouch": "./source/images/apple-touch-icon.jpg",
+      "appleTouchMore": {
+        "120x120": "./source/images/apple-touch-icon.jpg",
+        "180x180": "./source/images/apple-touch-icon.jpg"
+      },
+      "bookmark": "./source/images/favicon.jpg",
+      "shortcut": "./source/images/favicon.jpg"
+    },
+    "github": {
+      "url": "https://github.com/changzuozhen/andynote"
+    },
+    "github-buttons": {
+      "buttons": [
+        {
+          "count": true,
+          "repo": "andynote",
+          "size": "small",
+          "type": "star",
+          "user": "changzuozhen"
+        }
+      ]
+    },
+    "sharing": {
+      "all": [
+        "google",
+        "facebook",
+        "weibo",
+        "twitter",
+        "qq",
+        "qzone",
+        "linkedin",
+        "pocket"
+      ],
+      "douban": false,
+      "facebook": false,
+      "google": false,
+      "hatenaBookmark": false,
+      "instapaper": false,
+      "line": false,
+      "linkedin": false,
+      "messenger": false,
+      "pocket": false,
+      "qq": false,
+      "qzone": false,
+      "stumbleupon": false,
+      "twitter": false,
+      "viber": false,
+      "vk": false,
+      "weibo": false,
+      "whatsapp": false
+    }
+  },
+  "structure": {
+    "readme": "README.md"
+  },
+  "styles": {
+    "website": "./styles/website.css"
+  },
+  "title": "AndyNote"
+}

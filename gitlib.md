@@ -19,3 +19,18 @@ https://github.com/shadowsocks/ShadowsocksX-NG
 
 [Android Studio设置shadowsocks代理](https://blog.csdn.net/u013495603/article/details/50970067)
 https://github.com/getlantern/lantern
+
+# ssrMac
+
+https://github.com/ShadowsocksR-Live/ssrMac
+
+Dependencies:
+
+Sodium [Installation](https://download.libsodium.org/doc/installation/index.html)
+mbedTLS [Installation](https://github.com/ARMmbed/mbedtls#cmake)
+libuv [Installation](https://github.com/libuv/libuv#build-instructions)
+
+git clone https://github.com/ShadowsocksR-Live/ssrMac.git
+cd ssrMac
+git submodule update --init --recursive
+git submodule foreach -q 'git checkout $(git config -f $toplevel/.gitmodules submodule.$name.branch || echo master)'
