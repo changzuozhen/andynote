@@ -46,6 +46,7 @@
 * [iterm](iterm.md)
 * [youtube-dl](youtube-dl.md)
 * [gitbook](gitbook.md)
+* [efficiency](efficiency.md)
 
 ## research
 * [shell](shell.md)
