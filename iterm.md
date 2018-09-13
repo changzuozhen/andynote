@@ -1,4 +1,4 @@
-# 
+# iterm 
 
 [MAC下iTerm主题配置](https://www.zybuluo.com/Sweetfish/note/636550)
 

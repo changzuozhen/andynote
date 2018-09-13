@@ -1,3 +1,5 @@
+```bash
+
 # 
 # brew install youtube-dl
 # youtube-dl -o '%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s' url
@@ -66,4 +68,4 @@ youtube-dl -o '%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s' --convert-su
 
 # 維修保養
 youtube-dl -o '%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s' --convert-subs srt --write-sub --all-subs --embed-subs --proxy https://dev-proxy.oa.com:8080 https://www.youtube.com/watch?v=mKHQ3MVxBcs&list=PLdcIFI5tFg5j4A5hWNN2JLED981WpWpUJ
-
+```
