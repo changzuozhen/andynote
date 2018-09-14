@@ -13,8 +13,18 @@ ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-
 
 http://mama.indstate.edu/users/ice/tree/
 
-解压
+```bash
+curl -O http://mama.indstate.edu/users/ice/tree/src/tree-1.7.0.tgz
+
+tar -xzf tree-1.7.0.tgz
 
 make
 
+# macOS
 mv tree ~/bin/
+
+# centos
+mv tree /usr/bin/
+
+tree -pfhFClN --dirsfirst -L 1
+```
