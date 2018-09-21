@@ -27,5 +27,16 @@ git remote add origin git@git***.com:user/folder_path.git
 git push -u origin --all
 git push -u origin --tags
 
+
+cat ~/.ssh/id_rsa.pub
+
+ssh-keygen -t rsa -C "email@qq.com" -b 4096
+
+macOS:
+pbcopy < ~/.ssh/id_rsa.pub
+
+GNU/Linux (requires the xclip package):
+xclip -sel clip < ~/.ssh/id_rsa.pub
+
 ```
 

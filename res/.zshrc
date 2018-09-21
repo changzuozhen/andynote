@@ -73,6 +73,7 @@ export PATH=$PATH:$GOBIN
 export PATH=/Users/AndyChang/Library/Android/sdk/tools:/Users/AndyChang/Developer/GitHub/dex-method-counts:/Users/AndyChang/Developer/GitHub/dex-method-counts/build/distributions/dex-method-counts/bin:$HOME/bin:/usr/local/bin:/Users/AndyChang/Library/Android/sdk/platform-tools:~/bin:$PATH
 
 export PATH=/opt/local/bin:$PATH
+export PATH=/Users/AndyChang/Library/Android/sdk/tools/bin/:$PATH
 
 export ANDROID_SDK_ROOT=/Users/AndyChang/Library/Android/sdk/:$ANDROID_SDK_ROOT
 
@@ -181,7 +182,7 @@ alias proguardgui='sh /Users/AndyChang/Library/Android/sdk/tools/proguard/bin/pr
 alias ytb="youtube-dl -o '%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s' --convert-subs srt --write-sub --all-subs --embed-subs --proxy https://dev-proxy.oa.com:8080 "
 alias ytb-p="youtube-dl --proxy https://dev-proxy.oa.com:8080 "
 alias ytb-pls="youtube-dl --proxy https://dev-proxy.oa.com:8080 --list-formats "
-alias treel="tree -pfhFClN --dirsfirst -L"
+alias treel='tree -pfhFClN --dirsfirst -L'
 # mount the android file image
 function mountAndroid { hdiutil attach ~/android.dmg -mountpoint /Volumes/android; }
 # unmount the android file image
