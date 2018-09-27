@@ -1,1 +1,29 @@
 http://txp-01.tencent.com/proxy.pac
+
+
+! Put user rules line by line in this file.
+! See https://adblockplus.org/en/filter-cheatsheet
+||github.com^
+||gitbook.io^
+||gitbook.com^
+||jetbrains.com^
+||jetbrains.org^
+||gradle.org^
+||bitbucket.org^
+||npmjs.org^
+||jcenter.bintray.com^
+||rubygems.org^
+@@||bintray.com^
+@@||xiaojukeji.com^
+@@||didichuxing.com^
+@@||qq.com^
+@@||didiglobal.com^
+@@||miui.com^
+@@||rlab.xyz^
+@@||baidu.com^
+@@||mi.com^
+@@||qq.com^
+
+
+
+export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;

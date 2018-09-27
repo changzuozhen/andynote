@@ -51,3 +51,25 @@ https://guides.gradle.org/creating-new-gradle-builds/
 
 [Command-Line Interface](https://docs.gradle.org/4.6/userguide/command_line_interface.html?_ga=2.256845826.886457711.1524110253-343016227.1522122506)
 
+[Gradle User Manual](https://docs.gradle.org/4.10-rc-2/userguide/userguide.html)
+
+[Implementing Gradle plugins](https://guides.gradle.org/implementing-gradle-plugins/)
+
+[Main Types of Plugins](http://www.jetbrains.org/intellij/sdk/docs/basics/types_of_plugins.html)
+
+[Gradle Build Language Reference
+](https://docs.gradle.org/4.10-rc-2/dsl/)
+
+
+
+* [Writing Custom Gradle Tasks](https://guides.gradle.org/writing-gradle-tasks/)
+    * [Organizing Gradle Projects](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html)
+    * [Declaring your source files via source sets](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:java_source_sets)
+    * 
+
+
+https://github.com/gradle/kotlin-dsl
+
+例子：
+https://github.com/gradle/kotlin-dsl/tree/master/samples
+

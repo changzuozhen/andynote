@@ -34,3 +34,9 @@ git clone https://github.com/ShadowsocksR-Live/ssrMac.git
 cd ssrMac
 git submodule update --init --recursive
 git submodule foreach -q 'git checkout $(git config -f $toplevel/.gitmodules submodule.$name.branch || echo master)'
+
+
+# GitLab
+
+https://github.com/ahmed-basyouni/AndroidKVO
+
