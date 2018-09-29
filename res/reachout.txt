@@ -23,6 +23,7 @@ http://txp-01.tencent.com/proxy.pac
 @@||baidu.com^
 @@||mi.com^
 @@||qq.com^
+@@||jd.com^
 
 
 
