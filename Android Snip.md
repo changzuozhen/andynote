@@ -30,3 +30,4 @@
 ```
 
 
+adb shell screenrecord --bugreport /sdcard/test.mp4
