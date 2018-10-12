@@ -15,6 +15,7 @@
 # sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 
+bcomp ./hosts /etc/hosts
 bcomp ./script/ ~/script/
 bcomp ./.zshrc ~/.zshrc
 # bcomp ./devreachout.txt ~/devreachout.txt

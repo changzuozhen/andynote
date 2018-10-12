@@ -14,6 +14,8 @@ Android 的结构
 
 ![](media/15391723808636.jpg)
 
+![](media/15392453018233.jpg)
+
 
 [Google I/O 2008 - Dalvik Virtual Machine Internals](https://www.youtube.com/watch?v=ptjedOZEXPM)
 
@@ -40,6 +42,43 @@ cd manifest
 git tag
 git branch -a
 ```
+
+有多少构建模块？
+```shell
+find . -name Android.mk | wc -l
+```
+
+![](media/15392296725871.jpg)
+
+![](media/15392411094807.jpg)
+
+BP (Baseband Processor) 系带处理器
+AP (Application Processor) 应用处理器
+RTOS (Real-time OS) 实时操作系统
+eMMC (embedded MultiMediaCard) 嵌入式多媒体卡
+PMIC (Power Management IC) 电源管理芯片
+
+![](media/15392430464782.jpg)
+
+![](media/15392445953353.jpg)
+
+FHS (Filesystem Hierarchy Standard) 文件系统目录标准
+
+ddms (Dalvik Debug Monitor Server) Davik调试监控服务器
+
+```shell
+su
+// 关闭zygote
+stop zygote
+
+// 手动启动zygote
+start zygote
+```
+
+![](media/15392611131201.jpg)
+
+![](media/15392613971933.jpg)
+
 
 # 最强Android书 架构大剖析-崔孝晨-译
 
