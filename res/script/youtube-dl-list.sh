@@ -1,4 +1,7 @@
 #!/bin/bash
+# export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;
+# youtube-dl -i --proxy http://127.0.0.1:1087 
+
 # Android Support Library
 # youtube-dl -i -o '%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s' --convert-subs srt --write-sub --all-subs --embed-subs --proxy https://dev-proxy.oa.com:8080 https://www.youtube.com/playlist?list=PLWz5rJ2EKKc9e0d55YHgJFHXNZbGHEXJX
 

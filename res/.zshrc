@@ -1,5 +1,14 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
+# https://www.macports.org/install.php
+export PATH=/opt/local/bin:$PATH
+
+
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/emulator
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -70,16 +79,15 @@ export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
 
 
-export PATH=/Users/AndyChang/Library/Android/sdk/tools:/Users/AndyChang/Developer/GitHub/dex-method-counts:/Users/AndyChang/Developer/GitHub/dex-method-counts/build/distributions/dex-method-counts/bin:$HOME/bin:/usr/local/bin:/Users/AndyChang/Library/Android/sdk/platform-tools:~/bin:$PATH
 
-export PATH=/opt/local/bin:$PATH
-export PATH=/Users/AndyChang/Library/Android/sdk/tools/bin/:$PATH
+export PATH=/Users/AndyChang/Developer/GitHub/dex-method-counts:/Users/AndyChang/Developer/GitHub/dex-method-counts/build/distributions/dex-method-counts/bin:~/bin:$PATH
 
 export ANDROID_SDK_ROOT=/Users/AndyChang/Library/Android/sdk/:$ANDROID_SDK_ROOT
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
+source /Users/AndyChang/.rvm/scripts/rvm
 # source /Users/AndyChang/script/myscript.sh
 
 # You may need to manually set your language environment
@@ -202,3 +210,6 @@ export ANDROID_HOME="/Users/AndyChang/Library/Android/sdk"
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/AndyChang/.sdkman"
 [[ -s "/Users/AndyChang/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/AndyChang/.sdkman/bin/sdkman-init.sh"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

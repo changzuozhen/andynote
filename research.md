@@ -15,3 +15,21 @@ https://www.androidos.net.cn/osarticle
 	![](media/15389963493113.jpg)
 
 
+# research 
+
+[wxapp](wxapp.md)
+
+## Conductor
+https://github.com/bluelinelabs/Conductor
+
+主要特性:
+
+易于集成
+无需使用 Fragments 构建单 Activity 应用
+简单但是功能强大的生命周期管理
+导航和回退栈管理
+view 之间动效切换
+视图状态持久化
+onActivityResult, onRequestPermissionsResult 等回调
+不强制某种架构, 支持多种架构思想: MVP / MVVM / VIPER / MVC 等
+

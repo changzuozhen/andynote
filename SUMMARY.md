@@ -17,9 +17,12 @@
 * [tensorflow](tensorflow.md)
 * [website](website.md)
 * [resarch](research.md)
+    * [mini program](mini program.md)
+    * [reactnative](reactnative.md)
 
 ## Android
 * [Android](Android.md)
+    * [AOSP](AOSP.md)
     * [MVP](mvp.md)
     * [MVVM](MVVM.md)
     * [Android JNI](Android_JNI.md)

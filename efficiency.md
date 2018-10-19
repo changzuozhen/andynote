@@ -50,3 +50,7 @@ tree -pfhFClN --dirsfirst -L 1
 ```
 
 
+# 由于众所周知的原因，可以考虑切换源为 taobao 源
+npm set registry https://registry.npm.taobao.org/
+
+youtube-dl -i --proxy http://127.0.0.1:1087
