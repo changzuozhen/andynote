@@ -54,3 +54,18 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
 [Android 文件或文件夹内容改变监听器（FileObserver）](http://www.cnblogs.com/sishuiliuyun/articles/3174098.html)
 
+### KVO
+
+* [Android KVO - drumge](https://www.jianshu.com/p/59acfa5f2f0a)
+    * [github 项目地址](https://github.com/drumge/kvo)
+    * 更容易使用 android gradle 自定义插件的插件 https://github.com/drumge/easy-gradle-plugin
+* https://github.com/drumge/android-kvo
+
+[butterknife view绑定的实现](https://juejin.im/post/587d81295c497d0058b17a16)
+
+
+[自动生成builder](https://academy.realm.io/posts/360andev-ryan-harter-eliminate-boilerplate/)
+
+[ANNOTATION PROCESSING](http://hannesdorfmann.com/annotation-processing/annotationprocessing101)
+
+

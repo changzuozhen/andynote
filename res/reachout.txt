@@ -13,7 +13,15 @@ http://txp-01.tencent.com/proxy.pac
 ||npmjs.org^
 ||jcenter.bintray.com^
 ||rubygems.org^
-@@||bintray.com^
+||googlesource.com^
+||grepcode.com^
+||android.com^
+||scrimba.com^
+||google.com^
+||mpvue.com^
+||youtube.com^
+||bintray.com^
+||egghead.io^
 @@||xiaojukeji.com^
 @@||didichuxing.com^
 @@||qq.com^
@@ -24,7 +32,8 @@ http://txp-01.tencent.com/proxy.pac
 @@||mi.com^
 @@||qq.com^
 @@||jd.com^
-
+@@||taobao.org^
 
 
 export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;
+
