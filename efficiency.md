@@ -1,3 +1,4 @@
+* [reactnative](reactnative.md)
 
 # 开发工具
 
@@ -53,4 +54,22 @@ tree -pfhFClN --dirsfirst -L 1
 # 由于众所周知的原因，可以考虑切换源为 taobao 源
 npm set registry https://registry.npm.taobao.org/
 
-youtube-dl -i --proxy http://127.0.0.1:1087
+```shell
+brew install aria2
+youtube-dl -i --proxy http://127.0.0.1:1087 --external-downloader aria2c --external-downloader-args "-x 16  -k 1M"
+
+# 文件列表下载
+youtube-dl -i -o '%(series)s/%(id)s - %(fulltitle)s' --proxy http://127.0.0.1:1087 --convert-subs srt --write-sub --all-subs --embed-subs --external-downloader aria2c --external-downloader-args "-x 16  -k 1M" -a The\ Beginner\'s\ Guide\ to\ React.txt
+
+# 打印信息
+# youtube-dl -i --proxy http://127.0.0.1:1087 --print-json -s https://egghead.io/lessons/react-introduction-to-the-beginner-s-guide-to-reactjs
+
+# 格式化下载
+# youtube-dl -o '%(series)s/%(id)s - %(fulltitle)s' --proxy http://127.0.0.1:1087 --convert-subs srt --write-sub --all-subs --embed-subs --external-downloader aria2c --external-downloader-args "-x 16  -k 1M" https://egghead.io/lessons/react-introduction-to-the-beginner-s-guide-to-reactjs
+
+
+```
+
+https://aria2.github.io/
+
+
