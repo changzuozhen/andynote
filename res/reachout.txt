@@ -1,6 +1,5 @@
 http://txp-01.tencent.com/proxy.pac
 
-
 ! Put user rules line by line in this file.
 ! See https://adblockplus.org/en/filter-cheatsheet
 ||github.com^
@@ -22,6 +21,11 @@ http://txp-01.tencent.com/proxy.pac
 ||youtube.com^
 ||bintray.com^
 ||egghead.io^
+||reactnativeexpress.com^
+||igexin.com^
+||jitpack.io^
+||kotlinlang.org^
+||sonatype.org^
 @@||xiaojukeji.com^
 @@||didichuxing.com^
 @@||qq.com^

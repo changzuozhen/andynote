@@ -18,6 +18,8 @@
 bcomp ./hosts /etc/hosts
 bcomp ./script/ ~/script/
 bcomp ./.zshrc ~/.zshrc
+bcomp ./.bash_profile ~/.bash_profile
+bcomp ./.bashrc ~/.bashrc
 # bcomp ./devreachout.txt ~/devreachout.txt
 # bcomp ./reachout.txt ~/reachout.txt
 bcomp ./snip.txt ~/snip.txt

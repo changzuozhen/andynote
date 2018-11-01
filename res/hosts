@@ -7,10 +7,10 @@
 127.0.0.1	localhost
 255.255.255.255	broadcasthost
 ::1             localhost
-0.0.0.0 account.jetbrains.com
 127.0.0.1 www.iffmpeg.com
 127.0.0.1 webcluster110.one.com
 127.0.0.1 webcluster05.one.com
 127.0.0.1 webcluster06.one.com
 127.0.0.1 daisydiskapp.com
-127.0.0.1	daisydiskapp.com
+127.0.0.1 charliemonroe.net
+0:0:0:0	daisydiskapp.com

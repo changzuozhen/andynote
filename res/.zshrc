@@ -3,6 +3,9 @@ export ZSH=$HOME/.oh-my-zsh
 # https://www.macports.org/install.php
 export PATH=/opt/local/bin:$PATH
 
+export PATH=/usr/local/Cellar/node/10.12.0/bin:$PATH
+
+
 
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools
@@ -80,15 +83,15 @@ export PATH=$PATH:$GOBIN
 
 
 
-export PATH=/Users/AndyChang/Developer/GitHub/dex-method-counts:/Users/AndyChang/Developer/GitHub/dex-method-counts/build/distributions/dex-method-counts/bin:~/bin:$PATH
+export PATH=~/Developer/GitHub/dex-method-counts:~/Developer/GitHub/dex-method-counts/build/distributions/dex-method-counts/bin:~/bin:$PATH
 
-export ANDROID_SDK_ROOT=/Users/AndyChang/Library/Android/sdk/:$ANDROID_SDK_ROOT
+export ANDROID_SDK_ROOT=~/Library/Android/sdk/:$ANDROID_SDK_ROOT
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
-source /Users/AndyChang/.rvm/scripts/rvm
-# source /Users/AndyChang/script/myscript.sh
+source ~/.rvm/scripts/rvm
+# source ~/script/myscript.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -115,7 +118,7 @@ source /Users/AndyChang/.rvm/scripts/rvm
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
 
-export PATH="/Users/AndyChang/script:/usr/local/sbin:$PATH"
+export PATH="~/script:/usr/local/sbin:$PATH"
 
 alias ll='ls -alh'
 # alias adb='~/script/adb'
@@ -151,7 +154,7 @@ alias viewsystrace="open mynewtrace.html"
 alias currentapp="adb shell dumpsys window | grep -E 'mCurrentFocus|mFocusedApp&Window' | cut -d' ' -f6 | cut -d'/' -f 1"
 alias currentactivity="adb shell dumpsys window | grep -E 'mCurrentFocus|mFocusedApp&Window' | cut -d' ' -f6 | cut -d'}' -f 1"
 
-alias mocoall='cd /Users/AndyChang/didi/code/android/soda-pandora-android/soda-delivery-android/docs/moco/; java -jar moco-runner-0.12.0-standalone.jar http -p 12306 -c config.json'
+alias mocoall='cd ~/didi/code/android/soda-pandora-android/soda-delivery-android/docs/moco/; java -jar moco-runner-0.12.0-standalone.jar http -p 12306 -c config.json'
 
 ANDROID_SO="./build/intermediates/cmake/debug/obj/armeabi"
 ANDROID_SO_V7="./build/intermediates/cmake/debug/obj/armeabi-v7a"
@@ -167,9 +170,9 @@ alias ndkstackfilev7="ndk-stack -sym $ANDROID_SO_V7 -dump "
 
 alias updatesource="source ~/.zshrc"
 alias adinfo='python ~/script/adinfo.py'
-alias backupcode='sh /Users/AndyChang/Tencent/WorkDev/GOOD/backup.sh'
+alias backupcode='sh ~/Tencent/WorkDev/GOOD/backup.sh'
 alias myzip='~/script/myzip.py'
-alias decodepic='java -jar /Users/AndyChang/script/decodepic.jar '
+alias decodepic='java -jar ~/script/decodepic.jar '
 
 export NVM_DIR="~/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -186,7 +189,7 @@ alias adbdumpcpuinfo='adb shell dumpsys cpuinfo'
 alias adbgetwmsize='adb shell wm size'
 alias adbgetwmdensity='adb shell wm density'
 alias adbgetmem='adb shell cat /proc/meminfo'
-alias proguardgui='sh /Users/AndyChang/Library/Android/sdk/tools/proguard/bin/proguardgui.sh'
+alias proguardgui='sh ~/Library/Android/sdk/tools/proguard/bin/proguardgui.sh'
 alias ytb="youtube-dl -o '%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s' --convert-subs srt --write-sub --all-subs --embed-subs --proxy https://dev-proxy.oa.com:8080 "
 alias ytb-p="youtube-dl --proxy https://dev-proxy.oa.com:8080 "
 alias ytb-pls="youtube-dl --proxy https://dev-proxy.oa.com:8080 --list-formats "
@@ -204,12 +207,19 @@ ulimit -S -n 1024
 # export https_proxy=http://dev-proxy.oa.com:8080
 export no_proxy=localhost,.oa.com,.local
 export GOROOT_BOOTSTRAP="/usr/local/go/bin/go"
-export ANDROID_NDK_HOME="/Users/AndyChang/Library/Android/sdk/ndk-bundle"
-export ANDROID_HOME="/Users/AndyChang/Library/Android/sdk"
+export ANDROID_NDK_HOME="~/Library/Android/sdk/ndk-bundle"
+export ANDROID_HOME="~/Library/Android/sdk"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/AndyChang/.sdkman"
-[[ -s "/Users/AndyChang/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/AndyChang/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="~/.sdkman"
+[[ -s "~/.sdkman/bin/sdkman-init.sh" ]] && source "~/.sdkman/bin/sdkman-init.sh"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+export HTTP_PROXY="http://127.0.0.1:1087"
+export http_proxy="http://127.0.0.1:1087"
+export ALL_PROXY="http://127.0.0.1:1087"
+export all_proxy="http://127.0.0.1:1087"
+export HTTPS_PROXY="http://127.0.0.1:1087"
+export https_proxy="http://127.0.0.1:1087"
