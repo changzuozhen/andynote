@@ -14,7 +14,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/emulator
 
 # Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
+# Look in $HOME_PATH/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 # ZSH_THEME="robbyrussell"
@@ -60,8 +60,8 @@ ZSH_THEME="agnoster"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Which plugins would you like to load? (plugins can be found in $HOME_PATH/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to $HOME_PATH/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
@@ -83,15 +83,15 @@ export PATH=$PATH:$GOBIN
 
 
 
-export PATH=~/Developer/GitHub/dex-method-counts:~/Developer/GitHub/dex-method-counts/build/distributions/dex-method-counts/bin:~/bin:$PATH
+export PATH=$HOME_PATH/Developer/GitHub/dex-method-counts:$HOME_PATH/Developer/GitHub/dex-method-counts/build/distributions/dex-method-counts/bin:$HOME_PATH/bin:$PATH
 
-export ANDROID_SDK_ROOT=~/Library/Android/sdk/:$ANDROID_SDK_ROOT
+export ANDROID_SDK_ROOT=$HOME_PATH/Library/Android/sdk/:$ANDROID_SDK_ROOT
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
-source ~/.rvm/scripts/rvm
-# source ~/script/myscript.sh
+source $HOME_PATH/.rvm/scripts/rvm
+# source $HOME_PATH/script/myscript.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -107,7 +107,7 @@ source ~/.rvm/scripts/rvm
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
+# export SSH_KEY_PATH="$HOME_PATH/.ssh/dsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -115,19 +115,19 @@ source ~/.rvm/scripts/rvm
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="subl ~/.zshrc"
-alias ohmyzsh="subl ~/.oh-my-zsh"
-
-export PATH="~/script:/usr/local/sbin:$PATH"
+alias zshconfig="subl $HOME_PATH/.zshrc"
+alias ohmyzsh="subl $HOME_PATH/.oh-my-zsh"
+export HOME_PATH="/users/AndyChang"
+export PATH="$HOME_PATH/script:/usr/local/sbin:$PATH"
 
 alias ll='ls -alh'
-# alias adb='~/script/adb'
+# alias adb='$HOME_PATH/script/adb'
 
 alias killadb='adb kill-server \ adb devices'
-# alias emptytrash='rm -rf ~/.Trash'
-alias emptytrash='sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl'
-alias setupProxy='~/script/setupProxy.py'
-alias updatedev='sh ~/Tencent/workDev/up.sh'
+# alias emptytrash='rm -rf $HOME_PATH/.Trash'
+alias emptytrash='sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv $HOME_PATH/.Trash; sudo rm -rfv /private/var/log/asl/*.asl'
+alias setupProxy='$HOME_PATH/script/setupProxy.py'
+alias updatedev='sh $HOME_PATH/Tencent/workDev/up.sh'
 alias cf="adb shell dumpsys window | grep -E 'mCurrentFocus|mFocusedApp'"
 alias da='adb shell dumpsys activity activities'
 alias stop='adb shell am force-stop '
@@ -143,24 +143,24 @@ alias clearrlmusic='uninstallmusic ; adb root ; adb remount ; adb shell rm -rf /
 alias dumpmusic='adb shell dumpsys meminfo com.tencent.wecarmusic'
 alias cleanmusic='adb shell pm clear com.tencent.wecarmusic ; adb shell ls -R /storage/extsd/tencent/wecarmusic/data ; adb shell kill -9 `adb shell ps | grep music | cut -c10-15`;adb shell rm -r /storage/extsd/tencent/wecarmusic/data ; adb shell ls /storage/extsd/tencent/wecarmusic/data'
 alias cleanprefmusic='adb shell rm -r /storage/extsd/tencent/wecarmusic/data/pref ; adb shell pm clear com.tencent.wecarmusic'
-alias android='~/Library/Android/sdk/tools/android'
+alias android='$HOME_PATH/Library/Android/sdk/tools/android'
 alias agrep='''adb logcat | grep -v -e 'E/RRCTRL_AVS' | grep'''
 alias killmusic="adb shell kill -9 `adb shell ps | command grep music | cut -c10-15`"
 alias stopmusic="adb shell am force-stop com.tencent.wecarmusic"
 alias grepmusic="adb logcat | grep `adb shell ps | command grep music | cut -c10-15` | grep "
 alias grepallmusic="adb logcat | grep `adb shell ps | command grep music | cut -c10-15`"
-alias createsystrace="python ~/Library/Android/sdk/platform-tools/systrace/systrace.py  --time=5 -o mynewtrace.html sched gfx view wm"
+alias createsystrace="python $HOME_PATH/Library/Android/sdk/platform-tools/systrace/systrace.py  --time=5 -o mynewtrace.html sched gfx view wm"
 alias viewsystrace="open mynewtrace.html"
 alias currentapp="adb shell dumpsys window | grep -E 'mCurrentFocus|mFocusedApp&Window' | cut -d' ' -f6 | cut -d'/' -f 1"
 alias currentactivity="adb shell dumpsys window | grep -E 'mCurrentFocus|mFocusedApp&Window' | cut -d' ' -f6 | cut -d'}' -f 1"
 
-alias mocoall='cd ~/didi/code/android/soda-pandora-android/soda-delivery-android/docs/moco/; java -jar moco-runner-0.12.0-standalone.jar http -p 12306 -c config.json'
+alias mocoall='cd $HOME_PATH/didi/code/android/soda-pandora-android/soda-delivery-android/docs/moco/; java -jar moco-runner-0.12.0-standalone.jar http -p 12306 -c config.json'
 
 ANDROID_SO="./build/intermediates/cmake/debug/obj/armeabi"
 ANDROID_SO_V7="./build/intermediates/cmake/debug/obj/armeabi-v7a"
 
-alias addr2lin="~/Library/Android/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-addr2line -p -f -e"
-alias ndk-stack="~/Library/Android/android-ndk-r10e/ndk-stack"
+alias addr2lin="$HOME_PATH/Library/Android/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-addr2line -p -f -e"
+alias ndk-stack="$HOME_PATH/Library/Android/android-ndk-r10e/ndk-stack"
 
 alias ndkstacklogcat="adb shell logcat | ndk-stack -sym $ANDROID_SO"
 alias ndkstacklogcatv7="adb shell logcat | ndk-stack -sym $ANDROID_SO_V7"
@@ -168,13 +168,13 @@ alias ndkstacklogcatv7="adb shell logcat | ndk-stack -sym $ANDROID_SO_V7"
 alias ndkstackfile="ndk-stack -sym $ANDROID_SO -dump "
 alias ndkstackfilev7="ndk-stack -sym $ANDROID_SO_V7 -dump "
 
-alias updatesource="source ~/.zshrc"
-alias adinfo='python ~/script/adinfo.py'
-alias backupcode='sh ~/Tencent/WorkDev/GOOD/backup.sh'
-alias myzip='~/script/myzip.py'
-alias decodepic='java -jar ~/script/decodepic.jar '
+alias updatesource="source $HOME_PATH/.zshrc"
+alias adinfo='python $HOME_PATH/script/adinfo.py'
+alias backupcode='sh $HOME_PATH/Tencent/WorkDev/GOOD/backup.sh'
+alias myzip='$HOME_PATH/script/myzip.py'
+alias decodepic='java -jar $HOME_PATH/script/decodepic.jar '
 
-export NVM_DIR="~/.nvm"
+export NVM_DIR="$HOME_PATH/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 alias savelog="adb logcat -v threadtime > log.txt"
@@ -189,13 +189,13 @@ alias adbdumpcpuinfo='adb shell dumpsys cpuinfo'
 alias adbgetwmsize='adb shell wm size'
 alias adbgetwmdensity='adb shell wm density'
 alias adbgetmem='adb shell cat /proc/meminfo'
-alias proguardgui='sh ~/Library/Android/sdk/tools/proguard/bin/proguardgui.sh'
+alias proguardgui='sh $HOME_PATH/Library/Android/sdk/tools/proguard/bin/proguardgui.sh'
 alias ytb="youtube-dl -o '%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s' --convert-subs srt --write-sub --all-subs --embed-subs --proxy https://dev-proxy.oa.com:8080 "
 alias ytb-p="youtube-dl --proxy https://dev-proxy.oa.com:8080 "
 alias ytb-pls="youtube-dl --proxy https://dev-proxy.oa.com:8080 --list-formats "
 alias treel='tree -pfhFClN --dirsfirst -L'
 # mount the android file image
-function mountAndroid { hdiutil attach ~/android.dmg -mountpoint /Volumes/android; }
+function mountAndroid { hdiutil attach $HOME_PATH/android.dmg -mountpoint /Volumes/android; }
 # unmount the android file image
 function umountAndroid() { hdiutil detach /Volumes/android; }
 # set the number of open files to be 1024
@@ -207,12 +207,12 @@ ulimit -S -n 1024
 # export https_proxy=http://dev-proxy.oa.com:8080
 export no_proxy=localhost,.oa.com,.local
 export GOROOT_BOOTSTRAP="/usr/local/go/bin/go"
-export ANDROID_NDK_HOME="~/Library/Android/sdk/ndk-bundle"
-export ANDROID_HOME="~/Library/Android/sdk"
+export ANDROID_NDK_HOME="$HOME_PATH/Library/Android/sdk/ndk-bundle"
+export ANDROID_HOME="$HOME_PATH/Library/Android/sdk"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="~/.sdkman"
-[[ -s "~/.sdkman/bin/sdkman-init.sh" ]] && source "~/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="$HOME_PATH/.sdkman"
+[[ -s "$HOME_PATH/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME_PATH/.sdkman/bin/sdkman-init.sh"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"

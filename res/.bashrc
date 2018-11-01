@@ -1,5 +1,6 @@
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export HOME_PATH="/users/AndyChang"
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH=/opt/local/bin:$PATH
 export PATH=/usr/local/Cellar/node/10.12.0/bin:$PATH
