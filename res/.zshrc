@@ -12,7 +12,7 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/emulator
-
+export HOME_PATH=$HOME
 # Set name of the theme to load.
 # Look in $HOME_PATH/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each

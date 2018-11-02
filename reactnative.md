@@ -103,3 +103,19 @@ http://huziketang.mangojuice.top/books/react/
 深度剖析：如何实现一个 Virtual DOM 算法
 https://github.com/livoras/blog/issues/13
 
+
+# TypeScript
+https://www.tslang.cn/docs/home.html
+
+https://github.com/Microsoft/TypeScript-React-Starter#typescript-react-starter
+```
+npm install -g create-react-app
+create-react-app my-app --scripts-version=react-scripts-ts
+```
+
+https://www.tslang.cn/samples/index.html
+
+# efficiency
+
+https://github.com/creationix/nvm/blob/master/README.md
+
