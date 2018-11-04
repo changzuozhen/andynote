@@ -119,3 +119,6 @@ https://www.tslang.cn/samples/index.html
 
 https://github.com/creationix/nvm/blob/master/README.md
 
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/this
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/bind

@@ -190,9 +190,9 @@ alias adbgetwmsize='adb shell wm size'
 alias adbgetwmdensity='adb shell wm density'
 alias adbgetmem='adb shell cat /proc/meminfo'
 alias proguardgui='sh $HOME_PATH/Library/Android/sdk/tools/proguard/bin/proguardgui.sh'
-alias ytb="youtube-dl -o '%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s' --convert-subs srt --write-sub --all-subs --embed-subs --proxy https://dev-proxy.oa.com:8080 "
-alias ytb-p="youtube-dl --proxy https://dev-proxy.oa.com:8080 "
-alias ytb-pls="youtube-dl --proxy https://dev-proxy.oa.com:8080 --list-formats "
+alias ytb="youtube-dl -o '%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s' --convert-subs srt --write-sub --all-subs --embed-subs --proxy http://127.0.0.1:1087 "
+alias ytb-p="youtube-dl --proxy http://127.0.0.1:1087 "
+alias ytb-pls="youtube-dl --proxy http://127.0.0.1:1087 --list-formats "
 alias treel='tree -pfhFClN --dirsfirst -L'
 # mount the android file image
 function mountAndroid { hdiutil attach $HOME_PATH/android.dmg -mountpoint /Volumes/android; }
