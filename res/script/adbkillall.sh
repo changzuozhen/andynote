@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env bash
 adbkill() {
     if [ $# -eq 0 ]; then
         echo 没有命令行参数,要杀死全部线程，还不如重启算了

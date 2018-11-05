@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 cd /Users/AndyChang/Tencent/WorkDev/backup
 rm wecarListen.tar.gz
 

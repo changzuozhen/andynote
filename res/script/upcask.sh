@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 
 # 文／薛定谔不养猫（简书作者）
 # 原文链接：http://www.jianshu.com/p/f819fef09782

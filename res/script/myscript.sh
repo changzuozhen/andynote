@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # TEMPFILES="/Users/AndyChang/Tencent/Dev/tempFiles/"
 # DEVHOME="/Users/AndyChang/Tencent/Dev/"
 # echo ${TEMPFILES}

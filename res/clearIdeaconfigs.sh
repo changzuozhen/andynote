@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 rm -rf ~/Library/Preferences/Idea*
 rm -rf ~/Library/Caches/Idea*
 rm -rf ~/Library/Application\ Support/Idea*

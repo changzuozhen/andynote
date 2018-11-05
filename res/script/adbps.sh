@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env bash
 adbps() {
     if [ $# -eq 0 ]; then
         echo 没有命令行参数

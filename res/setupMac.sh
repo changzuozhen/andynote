@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # mkdir ~/Developer/GitHub
 # xcode-select --install
 # brew cask install coderunner

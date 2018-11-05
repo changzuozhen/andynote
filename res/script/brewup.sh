@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/usr/bin/env bash
 
 #Upgrade brew 
 brew update && brew upgrade 
