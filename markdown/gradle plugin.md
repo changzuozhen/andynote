@@ -75,3 +75,42 @@ https://github.com/gradle/kotlin-dsl/tree/master/samples
 
 https://github.com/JetBrains/kotlin/tree/master/libraries/examples
 
+[gradle 插件调试](https://blog.csdn.net/yzr1183739890/article/details/80712905)
+
+https://github.com/kevinho/Embrace-Android-Studio-Demo
+
+[拥抱 Android Studio 之二：Android Studio 与 Gradle 深入](http://blog.bugtags.com/2015/12/17/embrace-android-studio-indepth/)
+
+[拥抱 Android Studio 之三：溯源，Groovy 与 Gradle 基础](http://blog.bugtags.com/2016/01/04/embrace-android-studio-groovy-gradle/)
+
+* 讲解groovy解除基础
+* https://docs.gradle.org/current/userguide/userguide.html
+* “android gradle plugin dsl”，果然有个 [Android Plugin DSL Reference](http://google.github.io/android-gradle-dsl/current/)。
+* 末尾推荐资料
+    * 【Groovy Documentation](http://www.groovy-lang.org/documentation.html)：Groovy 的详细介绍文档
+    * 【Groovy API Reference](http://www.groovy-lang.org/api.html)：Groovy 的 API 文档，必要的时候查阅
+    * 【Gradle User Guid](https://docs.gradle.org/current/userguide/userguide.html)：Gradle 的详细介绍文档，很有必要过一遍
+    * 【Gradle Build Language Reference](https://docs.gradle.org/current/dsl/)：Gradle DSL 参考，重点的几个 DSL 过一下，其他的用到再查
+    * 【Android Plugin DSL Reference](http://google.github.io/android-gradle-dsl/current/index.html)：使用 Android 插件必备
+* [深入理解Android之Gradle](https://blog.csdn.net/innost/article/details/48228651)
+    * Groovy的API文档位于http://www.groovy-lang.org/api.html
+* []()
+
+[拥抱 Android Studio 之四：Maven 公共仓库使用与私有仓库搭建](http://blog.bugtags.com/2016/01/27/embrace-android-studio-maven-deploy/)
+
+```
+POM（Project Object Model）
+./gradlew -p localrepo clean build uploadArchives --info
+```
+
+[拥抱 Android Studio 之五：Gradle 插件使用与开发](http://blog.bugtags.com/2016/03/28/embrace-android-studio-gradle-plugin/)
+
+```
+gradle -p plugin clean build uploadArchives
+
+
+```
+
+
+https://docs.gradle.org/current/userguide/custom_plugins.html
+

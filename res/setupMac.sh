@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # mkdir ~/Developer/GitHub
 # xcode-select --install
+
+# brew cask install marp
+# brew cask install beyond-compare
 # brew cask install coderunner
 # brew cask install disk-inventory-x
 # brew cask install evernote

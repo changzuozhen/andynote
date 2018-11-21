@@ -33,3 +33,6 @@ view 之间动效切换
 onActivityResult, onRequestPermissionsResult 等回调
 不强制某种架构, 支持多种架构思想: MVP / MVVM / VIPER / MVC 等
 
+## firebase ML-KIT
+https://firebase.google.com/products/ml-kit/
+
