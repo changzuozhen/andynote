@@ -3,7 +3,6 @@
 @@||baidu.com^
 @@||didichuxing.com^
 @@||didiglobal.com^
-@@||googleblog.cn^
 @@||jd.com^
 @@||mi.com^
 @@||miui.com^
@@ -16,6 +15,7 @@
 ||bintray.com^
 ||bitbucket.org^
 ||egghead.io^
+||flutter.io^
 ||gitbook.com^
 ||gitbook.io^
 ||github.com^
@@ -32,8 +32,14 @@
 ||kotlinlang.org^
 ||mpvue.com^
 ||npmjs.org^
+||npmjs.org^
 ||reactnativeexpress.com^
 ||rubygems.org^
 ||scrimba.com^
 ||sonatype.org^
+||ted.com^
 ||youtube.com^
+
+
+export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;
+

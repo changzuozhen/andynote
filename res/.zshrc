@@ -13,6 +13,8 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/emulator
 export HOME_PATH=$HOME
+
+export PATH=$PATH:$HOME/development/flutter/bin
 # Set name of the theme to load.
 # Look in $HOME_PATH/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -194,6 +196,7 @@ alias ytb="youtube-dl -o '%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s' -
 alias ytb-p="youtube-dl --proxy http://127.0.0.1:1087 "
 alias ytb-pls="youtube-dl --proxy http://127.0.0.1:1087 --list-formats "
 alias treel='tree -pfhFClN --dirsfirst -L'
+alias treel2='tree -fhFlN --dirsfirst -L'
 # mount the android file image
 function mountAndroid { hdiutil attach $HOME_PATH/android.dmg -mountpoint /Volumes/android; }
 # unmount the android file image
