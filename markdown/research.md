@@ -17,7 +17,8 @@ https://www.androidos.net.cn/osarticle
 
 # research 
 
-[wxapp](wxapp.md)
+* [wxapp](wxapp.md)
+* [flutter](flutter.md)
 
 ## Conductor
 https://github.com/bluelinelabs/Conductor
@@ -33,6 +34,6 @@ view 之间动效切换
 onActivityResult, onRequestPermissionsResult 等回调
 不强制某种架构, 支持多种架构思想: MVP / MVVM / VIPER / MVC 等
 
-## firebase ML-KIT
-https://firebase.google.com/products/ml-kit/
+![](media/15433000607570.jpg)
 
+* [server](server/statistic.md)

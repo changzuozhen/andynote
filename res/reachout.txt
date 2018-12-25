@@ -3,6 +3,7 @@
 @@||baidu.com^
 @@||didichuxing.com^
 @@||didiglobal.com^
+@@||googleblog.cn^
 @@||jd.com^
 @@||mi.com^
 @@||miui.com^
@@ -24,6 +25,7 @@
 ||googlesource.com^
 ||gradle.org^
 ||grepcode.com^
+||groovy-lang.org^
 ||igexin.com^
 ||jcenter.bintray.com^
 ||jetbrains.com^

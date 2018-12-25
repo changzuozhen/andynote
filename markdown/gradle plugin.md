@@ -1,16 +1,15 @@
 # groovy
-http://www.groovy-lang.org/download.html#sdkman
 
-https://sdkman.io/install
-
-[IntelliJ Platform SDK DevGuide](http://www.jetbrains.org/intellij/sdk/docs/tutorials/build_system/prerequisites.html)
+* http://www.groovy-lang.org/download.html#sdkman
+* https://sdkman.io/install
+* [IntelliJ Platform SDK DevGuide](http://www.jetbrains.org/intellij/sdk/docs/tutorials/build_system/prerequisites.html)
 
 
 # AndroidStudio
 
-[Directories used by the IDE to store settings, caches, plugins and logs](https://intellij-support.jetbrains.com/hc/en-us/articles/206544519)
-[menu do not work](https://issuetracker.google.com/issues/79161145)
-[report-bugs#thread-dump](https://developer.android.com/studio/report-bugs#thread-dump)
+* [Directories used by the IDE to store settings, caches, plugins and logs](https://intellij-support.jetbrains.com/hc/en-us/articles/206544519)
+* [menu do not work](https://issuetracker.google.com/issues/79161145)
+* [report-bugs#thread-dump](https://developer.android.com/studio/report-bugs#thread-dump)
 
 ## plugins
 
@@ -21,6 +20,7 @@ https://sdkman.io/install
 * [adb-wifi-connect](https://plugins.jetbrains.com/plugin/9717-adb-wifi-connect)
 * [ectranslation](https://plugins.jetbrains.com/plugin/8469-ectranslation)
 * [android-butterknife-zelezny](https://plugins.jetbrains.com/plugin/7369-android-butterknife-zelezny)
+* [Android-Resource-Usage-Count/](https://niorgai.github.io/2017/08/01/Android-Resource-Usage-Count/)
 
 Android Studio 自动生成布局代码插件
 https://github.com/boredream/BorePlugin
@@ -45,44 +45,27 @@ https://github.com/boredream/BorePlugin
 
 # gradle
 
-https://guides.gradle.org/creating-new-gradle-builds/
-
-[the Gradle plugin portal](https://plugins.gradle.org/?_ga=2.177622956.886457711.1524110253-343016227.1522122506)
-
-[Command-Line Interface](https://docs.gradle.org/4.6/userguide/command_line_interface.html?_ga=2.256845826.886457711.1524110253-343016227.1522122506)
-
-[Gradle User Manual](https://docs.gradle.org/4.10-rc-2/userguide/userguide.html)
-
-[Implementing Gradle plugins](https://guides.gradle.org/implementing-gradle-plugins/)
-
-[Main Types of Plugins](http://www.jetbrains.org/intellij/sdk/docs/basics/types_of_plugins.html)
-
-[Gradle Build Language Reference
-](https://docs.gradle.org/4.10-rc-2/dsl/)
-
-
-
+* https://guides.gradle.org/creating-new-gradle-builds/
+* [the Gradle plugin portal](https://plugins.gradle.org/?_ga=2.177622956.886457711.1524110253-343016227.1522122506)
+* [Command-Line Interface](https://docs.gradle.org/4.6/userguide/command_line_interface.html?_ga=2.256845826.886457711.1524110253-343016227.1522122506)
+* [Gradle User Manual](https://docs.gradle.org/4.10-rc-2/userguide/userguide.html)
+* [Implementing Gradle plugins](https://guides.gradle.org/implementing-gradle-plugins/)
+* [Main Types of Plugins](http://www.jetbrains.org/intellij/sdk/docs/basics/types_of_plugins.html)
+* [Gradle Build Language Reference](https://docs.gradle.org/4.10-rc-2/dsl/)
 * [Writing Custom Gradle Tasks](https://guides.gradle.org/writing-gradle-tasks/)
     * [Organizing Gradle Projects](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html)
     * [Declaring your source files via source sets](https://docs.gradle.org/current/userguide/building_java_projects.html#sec:java_source_sets)
     * 
+* https://github.com/gradle/kotlin-dsl
 
+## 例子：
 
-https://github.com/gradle/kotlin-dsl
-
-例子：
-https://github.com/gradle/kotlin-dsl/tree/master/samples
-
-https://github.com/JetBrains/kotlin/tree/master/libraries/examples
-
-[gradle 插件调试](https://blog.csdn.net/yzr1183739890/article/details/80712905)
-
-https://github.com/kevinho/Embrace-Android-Studio-Demo
-
-[拥抱 Android Studio 之二：Android Studio 与 Gradle 深入](http://blog.bugtags.com/2015/12/17/embrace-android-studio-indepth/)
-
-[拥抱 Android Studio 之三：溯源，Groovy 与 Gradle 基础](http://blog.bugtags.com/2016/01/04/embrace-android-studio-groovy-gradle/)
-
+* https://github.com/gradle/kotlin-dsl/tree/master/samples
+* https://github.com/JetBrains/kotlin/tree/master/libraries/examples
+* [gradle 插件调试](https://blog.csdn.net/yzr1183739890/article/details/80712905)
+* https://github.com/kevinho/Embrace-Android-Studio-Demo
+* [拥抱 Android Studio 之二：Android Studio 与 Gradle 深入](http://blog.bugtags.com/2015/12/17/embrace-android-studio-indepth/)
+* [拥抱 Android Studio 之三：溯源，Groovy 与 Gradle 基础](http://blog.bugtags.com/2016/01/04/embrace-android-studio-groovy-gradle/)
 * 讲解groovy解除基础
 * https://docs.gradle.org/current/userguide/userguide.html
 * “android gradle plugin dsl”，果然有个 [Android Plugin DSL Reference](http://google.github.io/android-gradle-dsl/current/)。

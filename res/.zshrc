@@ -1,3 +1,10 @@
+# alias j12="export JAVA_HOME=`/usr/libexec/java_home -v 12`; java -version"
+# alias j11="export JAVA_HOME=`/usr/libexec/java_home -v 11`; java -version"
+# alias j10="export JAVA_HOME=`/usr/libexec/java_home -v 10`; java -version"
+# alias j9="export JAVA_HOME=`/usr/libexec/java_home -v 9`; java -version"
+# alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`; java -version"
+# alias j7="export JAVA_HOME=`/usr/libexec/java_home -v 1.7`; java -version"
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 # https://www.macports.org/install.php
@@ -156,7 +163,7 @@ alias viewsystrace="open mynewtrace.html"
 alias currentapp="adb shell dumpsys window | grep -E 'mCurrentFocus|mFocusedApp&Window' | cut -d' ' -f6 | cut -d'/' -f 1"
 alias currentactivity="adb shell dumpsys window | grep -E 'mCurrentFocus|mFocusedApp&Window' | cut -d' ' -f6 | cut -d'}' -f 1"
 
-alias mocoall='cd $HOME_PATH/didi/code/android/soda-pandora-android/soda-delivery-android/docs/moco/; java -jar moco-runner-0.12.0-standalone.jar http -p 12306 -c config.json'
+alias mocoall='cd $HOME_PATH/didi/code/global/global-delivery-android/docs/moco/; java -jar moco-runner-0.12.0-SNAPSHOT-standalone.jar http -p 12306 -c config.json'
 
 ANDROID_SO="./build/intermediates/cmake/debug/obj/armeabi"
 ANDROID_SO_V7="./build/intermediates/cmake/debug/obj/armeabi-v7a"
