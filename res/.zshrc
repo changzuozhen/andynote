@@ -1,3 +1,9 @@
+export HTTP_PROXY="http://127.0.0.1:1087"
+export http_proxy="http://127.0.0.1:1087"
+export ALL_PROXY="http://127.0.0.1:1087"
+export all_proxy="http://127.0.0.1:1087"
+export HTTPS_PROXY="http://127.0.0.1:1087"
+export https_proxy="http://127.0.0.1:1087"
 # alias j12="export JAVA_HOME=`/usr/libexec/java_home -v 12`; java -version"
 # alias j11="export JAVA_HOME=`/usr/libexec/java_home -v 11`; java -version"
 # alias j10="export JAVA_HOME=`/usr/libexec/java_home -v 10`; java -version"
@@ -20,6 +26,7 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/emulator
 export HOME_PATH=$HOME
+export PATH=$HOME_PATH/test/testmongodb/mongodb-osx-x86_64-4.0.4/bin:$PATH
 
 export PATH=$PATH:$HOME/development/flutter/bin
 # Set name of the theme to load.
@@ -204,6 +211,10 @@ alias ytb-p="youtube-dl --proxy http://127.0.0.1:1087 "
 alias ytb-pls="youtube-dl --proxy http://127.0.0.1:1087 --list-formats "
 alias treel='tree -pfhFClN --dirsfirst -L'
 alias treel2='tree -fhFlN --dirsfirst -L'
+alias stopcontainer='docker container stop $(docker container ls -aq)'
+alias rmcontainer='docker container stop $(docker container ls -aq);docker container rm $(docker container ls -aq);docker container prune;docker volume prune;docker network prune;echo ;docker system df;echo ;docker image ls'
+alias rmfirstimage='docker image rm $(docker image ls -q | head -n 1)'
+alias lldocker='docker container ls -a;echo ;docker image ls;echo ;docker network ls;echo ;docker volume ls; docker system df'
 # mount the android file image
 function mountAndroid { hdiutil attach $HOME_PATH/android.dmg -mountpoint /Volumes/android; }
 # unmount the android file image
@@ -226,10 +237,3 @@ export SDKMAN_DIR="$HOME_PATH/.sdkman"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-
-export HTTP_PROXY="http://127.0.0.1:1087"
-export http_proxy="http://127.0.0.1:1087"
-export ALL_PROXY="http://127.0.0.1:1087"
-export all_proxy="http://127.0.0.1:1087"
-export HTTPS_PROXY="http://127.0.0.1:1087"
-export https_proxy="http://127.0.0.1:1087"

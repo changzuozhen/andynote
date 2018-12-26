@@ -1,3 +1,11 @@
+export HTTP_PROXY="http://127.0.0.1:1087"
+export http_proxy="http://127.0.0.1:1087"
+export ALL_PROXY="http://127.0.0.1:1087"
+export all_proxy="http://127.0.0.1:1087"
+export HTTPS_PROXY="http://127.0.0.1:1087"
+export https_proxy="http://127.0.0.1:1087"
+
+
 export HOME_PATH="/users/AndyChang"
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools
@@ -20,10 +28,3 @@ export SDKMAN_DIR="~/.sdkman"
 
 # set the number of open files to be 1024
 ulimit -S -n 1024
-
-export HTTP_PROXY="http://127.0.0.1:1087"
-export http_proxy="http://127.0.0.1:1087"
-export ALL_PROXY="http://127.0.0.1:1087"
-export all_proxy="http://127.0.0.1:1087"
-export HTTPS_PROXY="http://127.0.0.1:1087"
-export https_proxy="http://127.0.0.1:1087"

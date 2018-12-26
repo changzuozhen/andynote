@@ -36,4 +36,4 @@ onActivityResult, onRequestPermissionsResult 等回调
 
 ![](media/15433000607570.jpg)
 
-* [server](server/statistic.md)
+* [server](server/index.md)
