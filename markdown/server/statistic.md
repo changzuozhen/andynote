@@ -34,3 +34,6 @@ The Dead-Simple Step-by-Step Guide for Front-End Developers to Getting Up and Ru
 
 # express
 https://expressjs.com/zh-cn/
+
+# EventProxy
+https://github.com/JacksonTian/eventproxy

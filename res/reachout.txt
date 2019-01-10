@@ -1,5 +1,6 @@
 ! Put user rules line by line in this file.
 ! See https://adblockplus.org/en/filter-cheatsheet
+@@||artifactory.intra.xiaojukeji.com^
 @@||baidu.com^
 @@||didichuxing.com^
 @@||didiglobal.com^
@@ -27,6 +28,7 @@
 ||grepcode.com^
 ||groovy-lang.org^
 ||igexin.com^
+||Insight.io^
 ||jcenter.bintray.com^
 ||jetbrains.com^
 ||jetbrains.org^

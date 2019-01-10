@@ -35,5 +35,3 @@ onActivityResult, onRequestPermissionsResult 等回调
 不强制某种架构, 支持多种架构思想: MVP / MVVM / VIPER / MVC 等
 
 ![](media/15433000607570.jpg)
-
-* [server](server/index.md)

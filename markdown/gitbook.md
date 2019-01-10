@@ -205,7 +205,7 @@ kill -9 `ps | grep node | awk 'NR==1{print $1}' `
 
 ```bash
 ps
-ps | grep node | awk '{print $1}' | xargs kill -9
+ps -e | grep node | awk '{print $1}' | xargs kill -9
 echo after kill
 ps
 yarn start > log.txt &

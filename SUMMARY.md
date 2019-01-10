@@ -19,6 +19,11 @@
 * [resarch](markdown/research.md)
     * [mini program](markdown/mini program.md)
     * [reactnative](markdown/reactnative.md)
+    * [server](markdown/server/index.md)
+        * [docker](markdown/server/docker.md)
+        * [MongoDB](markdown/server/MongoDB.md)
+        * [statistic](markdown/server/statistic.md)
+        * [ui](markdown/server/ui.md)
 
 ## Android
 * [Android](markdown/Android.md)

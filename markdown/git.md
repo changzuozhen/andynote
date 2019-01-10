@@ -42,3 +42,26 @@ git config --global https.proxy https://127.0.0.1:1087
 
 git config --global --unset http.proxy
 git config --global --unset https.proxy
+
+
+```bash
+
+//Locating an existing SSH key pair
+//Windows Command Prompt:
+//type %userprofile%\.ssh\id_rsa.pub
+//Git Bash on Windows / GNU/Linux / macOS / PowerShell:
+cat ~/.ssh/id_rsa.pub
+
+//Generating a new SSH key pair
+ssh-keygen -t rsa -C "your.email@example.com" -b 4096
+
+//macOS:
+pbcopy < ~/.ssh/id_rsa.pub
+//GNU/Linux (requires the xclip package):
+xclip -sel clip < ~/.ssh/id_rsa.pub
+//Windows Command Line:
+type %userprofile%\.ssh\id_rsa.pub | clip
+//Git Bash on Windows / Windows PowerShell:
+cat ~/.ssh/id_rsa.pub | clip
+
+```
