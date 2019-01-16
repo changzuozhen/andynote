@@ -19,3 +19,18 @@ mongod --dbpath <path to data directory>
 
 docker exec -it *** bash
 ```
+
+
+https://linuxize.com/post/how-to-install-mongodb-on-centos-7/
+```bash
+vi /etc/yum.repos.d/mongodb-org.repo
+
+[mongodb-org-4.0]
+name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/4.0/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-4.0.asc
+
+sudo yum install mongodb-org
+```

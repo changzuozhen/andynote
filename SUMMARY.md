@@ -10,7 +10,7 @@
     * [gitsnip](markdown/gitsnip.md)
 * [gradle plugin](markdown/gradle plugin.md)
 * [iterm](markdown/iterm.md)
-* [gitbook](markdown/gitbook.md)
+* [gitbook](markdown/server/gitbook.md)
     * [docusaurus](markdown/docusaurus.md)
 
 ## research
