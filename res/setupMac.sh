@@ -15,6 +15,7 @@
 # brew install youtube-dl
 # brew install pidcat
 # brew install gradle-completion
+# brew cask install keycastr
 
 # sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl

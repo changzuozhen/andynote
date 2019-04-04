@@ -84,6 +84,10 @@ sudo wget https://dl.yarnpkg.com/rpm/yarn.repo -O /etc/yum.repos.d/yarn.repo
 sudo yum install yarn
 
 npm install gitbook-cli -g
+
+sudo npm install supervisor -g
+ln -s ~/node-v8.11.4-linux-x64/bin/supervisor /usr/bin/supervisor
+
 ```
 
 **node serve**
