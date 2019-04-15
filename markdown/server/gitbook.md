@@ -191,7 +191,8 @@ sudo yum install yarn
 由于通过管道把PID传给KILL -9无法生效。因此需要使用 
 
 ```bash
-ps | grep node | awk 'NR==1{print $1}' | xargs kill -9
+#ps | grep node | awk 'NR==1{print $1}' | xargs kill -9
+lsof -i:3000 | grep node | awk '{print $2}' | xargs kill
 ```
 
 但是当前嵌入式设备上无法使用xargs 所以我们需要使用如下的方式：
