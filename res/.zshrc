@@ -1,9 +1,9 @@
-export HTTP_PROXY="http://127.0.0.1:1087"
-export http_proxy="http://127.0.0.1:1087"
-export ALL_PROXY="http://127.0.0.1:1087"
-export all_proxy="http://127.0.0.1:1087"
-export HTTPS_PROXY="http://127.0.0.1:1087"
-export https_proxy="http://127.0.0.1:1087"
+# export HTTP_PROXY="http://127.0.0.1:1087"
+# export http_proxy="http://127.0.0.1:1087"
+# export ALL_PROXY="http://127.0.0.1:1087"
+# export all_proxy="http://127.0.0.1:1087"
+# export HTTPS_PROXY="http://127.0.0.1:1087"
+# export https_proxy="http://127.0.0.1:1087"
 # alias j12="export JAVA_HOME=`/usr/libexec/java_home -v 12`; java -version"
 # alias j11="export JAVA_HOME=`/usr/libexec/java_home -v 11`; java -version"
 # alias j10="export JAVA_HOME=`/usr/libexec/java_home -v 10`; java -version"
@@ -23,10 +23,12 @@ export PATH=/usr/local/Cellar/node/10.12.0/bin:$PATH
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/tools/proguard/bin/
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$HOME/Library/Android/sdk/build-tools/28.0.3/
 export HOME_PATH=$HOME
-export PATH=$HOME_PATH/test/testmongodb/mongodb-osx-x86_64-4.0.4/bin:$PATH
+export PATH=$HOME_PATH/Developer/mongodb-osx-x86_64-4.0.5/bin/:$PATH
 
 export PATH=$PATH:$HOME/development/flutter/bin
 # Set name of the theme to load.
@@ -106,7 +108,7 @@ export ANDROID_SDK_ROOT=$HOME_PATH/Library/Android/sdk/:$ANDROID_SDK_ROOT
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
-source $HOME_PATH/.rvm/scripts/rvm
+# source $HOME_PATH/.rvm/scripts/rvm
 # source $HOME_PATH/script/myscript.sh
 
 # You may need to manually set your language environment
@@ -171,6 +173,7 @@ alias currentapp="adb shell dumpsys window | grep -E 'mCurrentFocus|mFocusedApp&
 alias currentactivity="adb shell dumpsys window | grep -E 'mCurrentFocus|mFocusedApp&Window' | cut -d' ' -f6 | cut -d'}' -f 1"
 
 alias mocoall='cd $HOME_PATH/didi/code/global/global-delivery-android/docs/moco/; java -jar moco-runner-0.12.0-SNAPSHOT-standalone.jar http -p 12306 -c config.json'
+alias mocochinaall='cd $HOME_PATH/didi/code/android/soda-pandora-android/soda-delivery-android/docs/moco/; java -jar moco-runner-0.12.0-SNAPSHOT-standalone.jar http -p 12306 -c config.json'
 
 ANDROID_SO="./build/intermediates/cmake/debug/obj/armeabi"
 ANDROID_SO_V7="./build/intermediates/cmake/debug/obj/armeabi-v7a"
@@ -236,4 +239,4 @@ export SDKMAN_DIR="$HOME_PATH/.sdkman"
 [[ -s "$HOME_PATH/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME_PATH/.sdkman/bin/sdkman-init.sh"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+# export PATH="$PATH:$HOME/.rvm/bin"

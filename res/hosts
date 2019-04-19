@@ -14,4 +14,11 @@
 127.0.0.1 daisydiskapp.com
 127.0.0.1 charliemonroe.net
 0:0:0:0	daisydiskapp.com
-0:0:0:0	mindnode.com
+# 0:0:0:0	mindnode.com
+0:0:0:0 devmate.com
+
+# 0:0:0:0	sketchrunner.github.io
+# 0:0:0:0	sketchapp.com
+
+104.20.6.63 bandwagonhost.com
+104.20.6.63 bwh1.net
