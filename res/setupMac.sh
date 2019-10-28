@@ -17,6 +17,10 @@
 # brew install gradle-completion
 # brew cask install keycastr
 
+# brew cask install android-platform-tools
+# https://github.com/Genymobile/scrcpy
+# brew install scrcpy
+
 # sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 

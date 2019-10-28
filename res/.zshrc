@@ -171,8 +171,11 @@ alias createsystrace="python $HOME_PATH/Library/Android/sdk/platform-tools/systr
 alias viewsystrace="open mynewtrace.html"
 alias currentapp="adb shell dumpsys window | grep -E 'mCurrentFocus|mFocusedApp&Window' | cut -d' ' -f6 | cut -d'/' -f 1"
 alias currentactivity="adb shell dumpsys window | grep -E 'mCurrentFocus|mFocusedApp&Window' | cut -d' ' -f6 | cut -d'}' -f 1"
-
-alias mocoall='cd $HOME_PATH/didi/code/global/global-delivery-android/docs/moco/; java -jar moco-runner-0.12.0-SNAPSHOT-standalone.jar http -p 12306 -c config.json'
+alias moco='cd $HOME_PATH/didi/code/global/global-delivery-android/docs/moco/;ll'
+alias moco1='cd $HOME_PATH/didi/code/readonly/global-delivery-android/docs/moco/;ll'
+alias mocoall='cd $HOME_PATH/didi/code/global/global-delivery-android/docs/moco/;ll'
+alias mocochina='cd $HOME_PATH/didi/code/android/soda-pandora-android/soda-delivery-android/docs/moco/;ll'
+alias update='source $HOME_PATH/.zshrc'
 alias mocochinaall='cd $HOME_PATH/didi/code/android/soda-pandora-android/soda-delivery-android/docs/moco/; java -jar moco-runner-0.12.0-SNAPSHOT-standalone.jar http -p 12306 -c config.json'
 
 ANDROID_SO="./build/intermediates/cmake/debug/obj/armeabi"
@@ -214,6 +217,9 @@ alias ytb-p="youtube-dl --proxy http://127.0.0.1:1087 "
 alias ytb-pls="youtube-dl --proxy http://127.0.0.1:1087 --list-formats "
 alias treel='tree -pfhFClN --dirsfirst -L'
 alias treel2='tree -fhFlN --dirsfirst -L'
+alias treel3='tree -hFlN --dirsfirst -L'
+alias fixprivacy='sudo spctl --master-disable'
+alias fixapp='sudo xattr -d com.apple.quarantine '
 alias stopcontainer='docker container stop $(docker container ls -aq)'
 alias rmcontainer='docker container stop $(docker container ls -aq);docker container rm $(docker container ls -aq);docker container prune;docker volume prune;docker network prune;echo ;docker system df;echo ;docker image ls'
 alias rmfirstimage='docker image rm $(docker image ls -q | head -n 1)'
