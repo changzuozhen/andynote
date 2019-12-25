@@ -8,4 +8,6 @@ echo 'Start to build your book ...'
 gitbook build
 echo 'Build Success！'
 
-echo -e "Now visit \033[44;37;5m http://locaclhost:3000/ \033[0m\n"
+var_ip=`ifconfig en0 | grep inet | grep -v inet6 | cut -d ' ' -f2`
+url="http://"${var_ip}":80/"
+echo -e "\033[32m "${url}" \033[0m"
