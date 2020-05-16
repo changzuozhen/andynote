@@ -172,11 +172,14 @@ alias viewsystrace="open mynewtrace.html"
 alias currentapp="adb shell dumpsys window | grep -E 'mCurrentFocus|mFocusedApp&Window' | cut -d' ' -f6 | cut -d'/' -f 1"
 alias currentactivity="adb shell dumpsys window | grep -E 'mCurrentFocus|mFocusedApp&Window' | cut -d' ' -f6 | cut -d'}' -f 1"
 alias moco='cd $HOME_PATH/didi/code/global/global-delivery-android/docs/moco/;ll'
-alias moco1='cd $HOME_PATH/didi/code/readonly/global-delivery-android/docs/moco/;ll'
+alias moco1='cd $HOME_PATH/didi/code/rider/speedx/docs/moco;ll'
+alias mocodev1='cd $HOME_PATH/didi/code/rider/dev1/docs/moco;ll'
+alias mocodev2='cd $HOME_PATH/didi/code/rider/dev2/docs/moco;ll'
 alias mocoall='cd $HOME_PATH/didi/code/global/global-delivery-android/docs/moco/;ll'
 alias mocochina='cd $HOME_PATH/didi/code/android/soda-pandora-android/soda-delivery-android/docs/moco/;ll'
 alias update='source $HOME_PATH/.zshrc'
 alias mocochinaall='cd $HOME_PATH/didi/code/android/soda-pandora-android/soda-delivery-android/docs/moco/; java -jar moco-runner-0.12.0-SNAPSHOT-standalone.jar http -p 12306 -c config.json'
+alias speedx='cd $HOME_PATH/didi/code/rider/speedx/global-delivery-android/script/;ll'
 
 ANDROID_SO="./build/intermediates/cmake/debug/obj/armeabi"
 ANDROID_SO_V7="./build/intermediates/cmake/debug/obj/armeabi-v7a"
@@ -224,6 +227,12 @@ alias stopcontainer='docker container stop $(docker container ls -aq)'
 alias rmcontainer='docker container stop $(docker container ls -aq);docker container rm $(docker container ls -aq);docker container prune;docker volume prune;docker network prune;echo ;docker system df;echo ;docker image ls'
 alias rmfirstimage='docker image rm $(docker image ls -q | head -n 1)'
 alias lldocker='docker container ls -a;echo ;docker image ls;echo ;docker network ls;echo ;docker volume ls; docker system df'
+alias myscrcpy='scrcpy --window-title 'Andy Phone' --show-touches --max-size 1024  --bit-rate 5M'
+alias myffmpeg='ffmpeg -r 3 -s 540x1080 -i'
+
+alias rm._="find . -type f -name '._*' -delete"
+alias lll="ls | xargs du -sh"
+
 # mount the android file image
 function mountAndroid { hdiutil attach $HOME_PATH/android.dmg -mountpoint /Volumes/android; }
 # unmount the android file image
@@ -235,6 +244,7 @@ ulimit -S -n 1024
 
 # export http_proxy=http://dev-proxy.oa.com:8080
 # export https_proxy=http://dev-proxy.oa.com:8080
+# export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7891
 export no_proxy=localhost,.oa.com,.local
 export GOROOT_BOOTSTRAP="/usr/local/go/bin/go"
 export ANDROID_NDK_HOME="$HOME_PATH/Library/Android/sdk/ndk-bundle"
