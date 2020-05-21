@@ -11,6 +11,8 @@
 # alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`; java -version"
 # alias j7="export JAVA_HOME=`/usr/libexec/java_home -v 1.7`; java -version"
 
+source ~/script/logutils.sh
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 # https://www.macports.org/install.php
