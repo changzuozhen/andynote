@@ -13,12 +13,17 @@
 127.0.0.1 webcluster06.one.com
 127.0.0.1 daisydiskapp.com
 127.0.0.1 charliemonroe.net
-0:0:0:0	daisydiskapp.com
-# 0:0:0:0	mindnode.com
-0:0:0:0 devmate.com
+127.0.0.1	daisydiskapp.com
+# 127.0.0.1	mindnode.com
+127.0.0.1 devmate.com
 
-# 0:0:0:0	sketchrunner.github.io
-# 0:0:0:0	sketchapp.com
+# 127.0.0.1	sketchrunner.github.io
+# 127.0.0.1	sketchapp.com
 
 104.20.6.63 bandwagonhost.com
 104.20.6.63 bwh1.net
+# Added by Docker Desktop
+# To allow the same kube context to work on the host and the container:
+127.0.0.1 kubernetes.docker.internal
+# 127.0.0.1 ocsp.apple.com
+# End of section

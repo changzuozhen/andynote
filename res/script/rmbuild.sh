@@ -29,3 +29,5 @@ printLog $1
 # printLog $root_dir
 # readDir $root_dir
 readDir $1
+
+find $1 -name "*.hprof" |xargs rm -rf
